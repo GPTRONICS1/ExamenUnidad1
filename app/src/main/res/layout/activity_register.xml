@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <!-- Nombre -->
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textName"
+        android:layout_marginTop="4dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <!-- Apellido -->
+    <TextView
+        android:id="@+id/textLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apellido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputName"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/inputLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Apellido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textLastName"
+        android:layout_marginTop="4dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <!-- Correo -->
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputLastName"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textEmail"
+        android:layout_marginTop="4dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <!-- Contraseña -->
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputEmail"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/inputPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textPassword"
+        android:layout_marginTop="4dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <!-- Confirmar Contraseña -->
+    <TextView
+        android:id="@+id/textConfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Contraseña"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputPassword"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/inputConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Confirmar Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textConfirmPassword"
+        android:layout_marginTop="4dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <!-- País -->
+    <TextView
+        android:id="@+id/textCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="País"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputConfirmPassword"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/inputCountry"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="País"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textCountry"
+        android:layout_marginTop="4dp"
+        app:layout_constraintWidth_percent="0.8"/>
+
+    <!-- Fecha de nacimiento -->
+    <TextView
+        android:id="@+id/textBirthDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Nacimiento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/inputCountry"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Inputs de mes, día, y año -->
+    <LinearLayout
+        android:id="@+id/birthDateInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textBirthDate"
+        app:layout_constraintWidth_percent="0.8">
+
+        <EditText
+            android:id="@+id/inputDay"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Día"
+            android:inputType="number"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/inputMonth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Mes"
+            android:inputType="number"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/inputYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Año"
+            android:inputType="number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!-- Checkbox de aceptar políticas -->
+    <CheckBox
+        android:id="@+id/checkboxTerms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aceptar políticas de privacidad"
+        app:layout_constraintTop_toBottomOf="@id/birthDateInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Checkbox de suscripción -->
+    <CheckBox
+        android:id="@+id/checkboxSubscription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suscribirme a boletines"
+        app:layout_constraintTop_toBottomOf="@id/checkboxTerms"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Botón de siguiente -->
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:layout_constraintTop_toBottomOf="@id/checkboxSubscription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

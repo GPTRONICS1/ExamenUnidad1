@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_option_1"
+        android:title="Opción 1" />
+    <item
+        android:id="@+id/nav_option_2"
+        android:title="Opción 2" />
+    <item
+        android:id="@+id/nav_option_3"
+        android:title="Opción 3" />
+    <item
+        android:id="@+id/nav_option_4"
+        android:title="Opción 4" />
+    <item
+        android:id="@+id/nav_option_5"
+        android:title="Opción 5" />
+    <item
+        android:id="@+id/nav_option_6"
+        android:title="Opción 6" />
+    <item
+        android:id="@+id/nav_option_7"
+        android:title="Opción 7" />
+    <item
+        android:id="@+id/nav_option_8"
+        android:title="Opción 8" />
+    <item
+        android:id="@+id/nav_option_9"
+        android:title="Opción 9" />
+</menu>
